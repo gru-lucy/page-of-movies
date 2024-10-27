@@ -1,0 +1,14 @@
+.lista_de_peliculas {
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .lista_de_peliculas {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
