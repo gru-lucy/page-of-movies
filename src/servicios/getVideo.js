@@ -1,5 +1,4 @@
-const { VITE_API_KEY } = import.meta.env
-const api = '?api_key=' + VITE_API_KEY
+const api = '?api_key=' + 'cbad74847d63fd64867bfb3fe06ef4dc'
 import { video } from '../adaptadores/video'
 
 export async function getVideo({ id, lang }) {

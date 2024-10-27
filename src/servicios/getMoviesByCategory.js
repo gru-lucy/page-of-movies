@@ -1,6 +1,5 @@
-const { VITE_API_KEY } = import.meta.env
 const URL = 'https://api.themoviedb.org/3/movie/'
-const api = 'api_key=' + VITE_API_KEY
+const api = 'api_key=' + 'cbad74847d63fd64867bfb3fe06ef4dc'
 
 export async function getMoviesByCategory(
   { category = 'now_playing', lang = 'es-MX', page = 1 },

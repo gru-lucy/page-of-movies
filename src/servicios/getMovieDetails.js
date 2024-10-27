@@ -1,4 +1,3 @@
-const { VITE_API_KEY } = import.meta.env
 const URL = 'https://api.themoviedb.org/3/movie/'
 import { movideDetails } from './../adaptadores/movieDetails'
 
@@ -7,7 +6,7 @@ export async function getMovieDetails(
   controlador = {}
 ) {
   const idioma = '&language=' + lang
-  const api = '?api_key=' + VITE_API_KEY
+  const api = '?api_key=' + 'cbad74847d63fd64867bfb3fe06ef4dc'
   const res = await fetch(URL + id + api + idioma, {
     signal: controlador.signal,
   })
